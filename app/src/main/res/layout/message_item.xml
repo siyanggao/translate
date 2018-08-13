@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/message_item_avatar"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="7dp"
+        android:layout_marginTop="7dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@mipmap/person_small" />
+
+    <TextView
+        android:id="@+id/message_item_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="TextView"
+        app:layout_constraintStart_toEndOf="@+id/message_item_avatar"
+        android:layout_marginTop="7dp"/>
+
+    <ImageView
+        android:id="@+id/message_item_gender"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginStart="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/message_item_content"
+        app:layout_constraintStart_toEndOf="@+id/message_item_name"
+        app:srcCompat="@mipmap/ic_launcher_round" />
+
+    <TextView
+        android:id="@+id/message_item_content"
+        android:layout_width="58dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:textSize="16sp"
+        app:layout_constraintStart_toEndOf="@+id/message_item_avatar"
+        app:layout_constraintTop_toBottomOf="@+id/message_item_name" />
+
+    <TextView
+        android:id="@+id/message_item_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="5dp"
+        android:text="TextView"
+        android:textColor="#999999"
+        android:textSize="12sp"
+        android:layout_marginBottom="5dp"
+        app:layout_constraintStart_toEndOf="@+id/message_item_avatar"
+        app:layout_constraintTop_toBottomOf="@+id/message_item_content" />
+
+    <ImageView
+        android:id="@+id/message_item_up"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:padding="5dp"
+        android:src="@mipmap/unup"
+        app:layout_constraintBottom_toBottomOf="@+id/message_item_time"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@mipmap/ic_launcher" />
+</android.support.constraint.ConstraintLayout>

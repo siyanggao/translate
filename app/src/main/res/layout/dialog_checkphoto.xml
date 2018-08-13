@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="#f1f1f1"
+    android:gravity="center_horizontal"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+    
+	<TextView 
+	    android:layout_width="match_parent"
+	    android:layout_height="49dp"
+	    android:text="拍照"
+	    android:textSize="17sp"
+	    android:id="@+id/tv_dialog_takephoto"
+	    android:background="@drawable/click_selecter"
+	    android:textColor="#0193e6"
+	    android:gravity="center"
+	    />
+	
+		<TextView 
+		android:layout_marginTop="1dp"
+	    android:layout_width="match_parent"
+	    android:layout_height="49dp"
+	    android:text="从相册选择"
+	    android:textSize="17sp"
+	    android:id="@+id/tv_dialog_checkfrombulm"
+	    android:background="@drawable/click_selecter"
+	    android:textColor="#0193e6"
+	    android:gravity="center"
+	    />
+		
+		<TextView 
+		    
+		android:layout_marginTop="6dp"
+	    android:layout_width="match_parent"
+	    android:layout_height="49dp"
+	    android:text="取消"
+	    android:textSize="20sp"
+	    android:textStyle="bold"
+	    android:id="@+id/tv_dialog_cancle"
+	    android:background="@drawable/click_selecter"
+	    android:textColor="#0193e6"
+	    android:gravity="center"
+	    />
+	
+</LinearLayout>
